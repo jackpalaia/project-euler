@@ -12,7 +12,13 @@ def fib_even_sum(n):
   return total
 
 def main():
-  print(fib_even_sum(3))
+  total = 0
+  n = 0
+  while fib(n) < 4000000:
+    if (fib(n) % 2 == 0):
+      total += fib(n)
+    n += 1
+  print(total)
 
 if __name__ == "__main__":
   main()
