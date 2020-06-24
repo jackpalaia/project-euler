@@ -36,7 +36,7 @@ def divisible():
   print(factorDict)
   product = 1
   for k, v in factorDict.items():
-    for i in range(v):
+    for _ in range(v):
       product *= k
   return product
 
